@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-import { AiOutlineMenu ,AiOutlineClose} from 'react-icons/ai'
+import { AiOutlineMenu ,AiOutlineClose,AiOutlineBehance,AiOutlineDribbble,AiOutlineLinkedin} from 'react-icons/ai'
 import { navLinks } from '../Constants';
 
 const Navbar = () => {
@@ -17,8 +17,8 @@ const Navbar = () => {
       };
 
   return (
-    <div className=' w-screen bg-yellow-500 flex flex-row justify-center'>
-        <div className='p-4 bg-yellow-500 flex flex-row items-center justify-between w-full max-w-[1440px] z-50'>
+    <div className=' w-screen fixed z-50  bg-yellow-500 flex flex-row justify-center'>
+        <div className='p-4 bg-yellow-500 flex flex-row items-center justify-between w-full max-w-[1440px] z-40'>
             <div className='navbar-logo'>
                 <a href='#' className='text-2xl font-bold transition-all duration-500 hover:tracking-widest'>Mike Bodioben</a>
             </div>
@@ -36,20 +36,26 @@ const Navbar = () => {
         </div>
         {
             toggleMenu ? 
-            <div className="menu absolute w-full h-[75%] top-[50px] p-4 bg-yellow-500 flex flex-col transition-all duration-1000 lg:hidden">
+            <div className="menu absolute z-10 w-full h-[400px] top-[50px] p-4 bg-yellow-500 flex flex-col transition-all duration-1000 lg:hidden">
                         <ul className='w-full flex flex-col items-center'>
                             {navLinks.map((link)=> (
                             <li key={link.id} className='my-2'><a href={`#${link.id}`}className=' text-xl capitalize font-medium transition-all  duration-300 hover:tracking-wider hover:text-white'>{link.title}</a></li>
                             ))}
                         </ul>
-                        <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button>   
+                        <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button>  
+                        <div className="social-link w-[250px]  mx-auto flex flex-row justify-between items-center">
+                            <a href="https://behance.net/mikebodioben"className=' flex justify-center items-center  w-[40px] h-[40px]  cursor- border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineBehance size={24}/></a>
+                            <a href="https://dribbble.com/mikeben19"className=' flex justify-center items-center  w-[40px] h-[40px]  mx- cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineDribbble size={24}/></a>
+                            <a href="https://linkedin.com/in/mike-bodioben"className=' flex justify-center items-center w-[40px] h-[40px] mx- cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineLinkedin size={24}/></a>
+                        </div>
                     </div> : <div className="menu absolute w-full h-[75%] top-[-100vh] p-4 bg-yellow-500 flex flex-col transition-all duration-1000">
                         <ul className='w-full  flex flex-col items-center'>
                                 {navLinks.map((link)=> (
                                 <li key={link.id} className='my-2'><a href={`#${link.id}`}className=' text-xl capitalize font-medium transition-all duration-300 '>{link.title}</a></li>
                                 ))}
                             </ul>
-                            <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button>  
+                            <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button> 
+                             
                     </div> 
                         
                 

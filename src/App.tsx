@@ -3,11 +3,16 @@
 import { Navbar } from './Components'
 
 import './App.css'
+import { About } from './Containers'
 
 function App() {
 
   return (
-    <Navbar/>
+    <div className='w-full'>
+      <Navbar/>
+      <About/>
+    </div>
+    
   )
 }
 
