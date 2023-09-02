@@ -5,3 +5,11 @@
 body{
   font-family: 'jura', Courier, monospace;
 }
+.title{
+  font-family: 'inter',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.blur-container{
+  border-radius: 50%;
+  z-index: -1000;
+  filter: blur(75px);
+}
