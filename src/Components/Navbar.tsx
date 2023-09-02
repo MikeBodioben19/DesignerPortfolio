@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
         {
             toggleMenu ? 
-            <div className="menu absolute w-full h-[75%] top-[50px] p-4 bg-yellow-500 flex flex-col transition-all duration-1000">
+            <div className="menu absolute w-full h-[75%] top-[50px] p-4 bg-yellow-500 flex flex-col transition-all duration-1000 lg:hidden">
                         <ul className='w-full flex flex-col items-center'>
                             {navLinks.map((link)=> (
                             <li key={link.id} className='my-2'><a href={`#${link.id}`}className=' text-xl capitalize font-medium transition-all  duration-300 hover:tracking-wider hover:text-white'>{link.title}</a></li>
