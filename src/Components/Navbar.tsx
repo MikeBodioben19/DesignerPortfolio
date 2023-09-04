@@ -44,9 +44,9 @@ const Navbar = () => {
                         </ul>
                         <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button>  
                         <div className="social-link w-[250px]  mx-auto flex flex-row justify-between items-center">
-                            <a href="https://behance.net/mikebodioben"className=' flex justify-center items-center  w-[40px] h-[40px]  cursor- border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineBehance size={24}/></a>
-                            <a href="https://dribbble.com/mikeben19"className=' flex justify-center items-center  w-[40px] h-[40px]  mx- cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineDribbble size={24}/></a>
-                            <a href="https://linkedin.com/in/mike-bodioben"className=' flex justify-center items-center w-[40px] h-[40px] mx- cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineLinkedin size={24}/></a>
+                            <a href="https://behance.net/mikebodioben"className=' flex justify-center items-center  w-[40px] h-[40px]  cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineBehance size={24}/></a>
+                            <a href="https://dribbble.com/mikeben19"className=' flex justify-center items-center  w-[40px] h-[40px]  cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineDribbble size={24}/></a>
+                            <a href="https://linkedin.com/in/mike-bodioben"className=' flex justify-center items-center w-[40px] h-[40px] cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineLinkedin size={24}/></a>
                         </div>
                     </div> : <div className="menu absolute w-full h-[75%] top-[-100vh] p-4 bg-yellow-500 flex flex-col transition-all duration-1000">
                         <ul className='w-full  flex flex-col items-center'>
