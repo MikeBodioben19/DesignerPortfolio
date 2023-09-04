@@ -1,5 +1,5 @@
 import About from "./About";
+import Domains from "./Domains";
+import Softwares from "./Softwares";
 
-
-
-export {About};
+export {About,Domains,Softwares};

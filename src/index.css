@@ -13,3 +13,31 @@ body{
   z-index: -1000;
   filter: blur(75px);
 }
+.underTitle{
+  font-family: 'Finger paint','Times New Roman', Times, serif;
+}
+.software-icon {
+  fill:#eab308;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.icon-container:hover .software-icon {
+  fill:rgb(23 37 84);
+}
+.icon{
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.icon-container:hover .icon {
+  color: #eab308;
+}
+.icon-container h2{
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+}
+.icon-container:hover h2{
+  color: #eab308;
+}

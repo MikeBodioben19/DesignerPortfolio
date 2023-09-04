@@ -3,7 +3,7 @@
 import { Navbar } from './Components'
 
 import './App.css'
-import { About } from './Containers'
+import { About, Domains, Softwares } from './Containers'
 
 function App() {
 
@@ -11,6 +11,8 @@ function App() {
     <div className='w-full'>
       <Navbar/>
       <About/>
+      <Domains/>
+      <Softwares/>
     </div>
     
   )
