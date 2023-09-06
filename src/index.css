@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  font-family: 'jura', Courier, monospace;
+  font-family: 'jura', Arial, Helvetica, sans-serif;
 }
 .title{
   font-family: 'inter',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

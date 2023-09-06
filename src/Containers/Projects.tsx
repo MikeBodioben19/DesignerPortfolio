@@ -29,9 +29,13 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>    
-                        <div className="main-image w-full h-[500px] mt-4 bg-gray-400 lg:w-[500px]">
-
+                        <div className="image-container flex flex-col gap-y-2">
+                            <div className="main-image w-full h-[500px] mt-4 bg-gray-400 lg:w-[500px]">
+                            </div>
+                            <div className="main-image w-full h-[500px] mt-4 bg-gray-400 lg:w-[500px]">
+                            </div>
                         </div>
+
                     </div>
 
                 ))}
