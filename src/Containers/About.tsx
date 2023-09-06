@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-full relative flex items-center justify-center pt-16'>
+    <div className='w-full relative flex items-center justify-center pt-16' id='about'>
         <div className='container w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center lg:flex-row-reverse lg:gap-x-6'>
             <div className='about-img w-full bg-red-500 h-[340px] lg:w-[500px]'>
 

@@ -8,7 +8,7 @@ import { RiCss3Line} from 'react-icons/ri'
 const Softwares = () => {
 
   return (
-    <div className='software-section w-full flex items-center justify-center'>
+    <div className='softwares-section w-full flex items-center justify-center' id='softwares'>
         <div className='container w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
             <div className='heading'>
                 <h1 className='title  text-2xl font-bold '>Softwares</h1>

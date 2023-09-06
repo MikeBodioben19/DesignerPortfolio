@@ -1,9 +1,10 @@
 import React from 'react'
 import { hardSkills, softSkills } from '../Constants'
+import {dots1, dots2} from "../assets"
 
 const Skills = () => {
     return (
-        <div className='skills-section w-full flex items-center justify-center'>
+        <div className='skills-section w-full flex items-center justify-center' id='skills'>
             <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
                 <div className='heading relative'>
                     <h1 className='title  text-2xl font-bold '>Skills</h1>
@@ -23,35 +24,35 @@ const Skills = () => {
                         </div>
                         <div className="skill-container hidden sm:block">
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>créativité</p>
+                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>créativité</p>
                                 <p className='w-[35%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[75%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>communication</p>
+                                <p className=' w-[75%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>communication</p>
                                 <p className='w-[25%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>curiosité</p>
+                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>curiosité</p>
                                 <p className='w-[35%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[85%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>travail d'équipe</p>
+                                <p className=' w-[85%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>travail d'équipe</p>
                                 <p className='w-[15%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[80%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>esprit critique</p>
+                                <p className=' w-[80%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>esprit critique</p>
                                 <p className='w-[20%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>proactivité</p>
+                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>proactivité</p>
                                 <p className='w-[35%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[70%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>organisation</p>
+                                <p className=' w-[70%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>organisation</p>
                                 <p className='w-[30%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[40%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize '>deepwork</p>
+                                <p className=' w-[40%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>deepwork</p>
                                 <p className='w-[60%] bg-blue-950 p-3 rounded-full'></p>
                             </div>
                         </div>
@@ -69,31 +70,31 @@ const Skills = () => {
                         </div>
                         <div className="skill-container hidden sm:block">
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-full  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>utilisation des scénarios d'usage</p>
+                                <p className=' w-full  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>utilisation des scénarios d'usage</p>
                                 {/* <p className=' bg-blue-950 p-3 rounded-full'></p> */}
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[75%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>illustrator</p>
+                                <p className=' w-[75%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>illustrator</p>
                                 <p className='w-[25%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[60%] bg-blue-950  rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>connaissance des couleurs</p>
+                                <p className=' w-[60%] bg-blue-950  rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>connaissance des couleurs</p>
                                 <p className='w-[40%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[85%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>maîtrise de la typographie</p>
+                                <p className=' w-[85%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>maîtrise de la typographie</p>
                                 <p className='w-[15%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[40%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>figma</p>
+                                <p className=' w-[40%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>figma</p>
                                 <p className='w-[60%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white'>photoshop</p>
+                                <p className=' w-[65%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700'>photoshop</p>
                                 <p className='w-[35%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[70%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>utilisation des personas</p>
+                                <p className=' w-[70%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>utilisation des personas</p>
                                 <p className='w-[30%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
@@ -102,8 +103,9 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
+                    <img src={dots1} alt="" className='dots-container absolute -z-10 -left-2 top-2' />
+                    <img src={dots2} alt="" className='dots-container absolute -z-10 -right-4 bottom-2' />
             </div>
         </div>
     )

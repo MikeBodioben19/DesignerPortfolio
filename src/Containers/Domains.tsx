@@ -7,7 +7,7 @@ import {  PiNotePencilDuotone, PiCodesandboxLogoLight } from 'react-icons/pi'
 
 const Domains = () => {
   return (
-    <div className='domains-section w-full flex items-center justify-center'>
+    <div className='domains-section w-full flex items-center justify-center' id='domains'>
         <div className='container w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
             <div className='heading relative'>
                 <h1 className='title  text-2xl font-bold '>Domains</h1>
