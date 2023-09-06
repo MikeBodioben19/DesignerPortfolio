@@ -42,3 +42,6 @@ body{
 .icon-container:hover h2{
   color: #eab308;
 }
+.vertical-timeline::before{
+  background-color: rgb(234, 179, 8);
+}

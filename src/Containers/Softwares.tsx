@@ -11,7 +11,7 @@ const Softwares = () => {
     <div className='softwares-section w-full flex items-center justify-center' id='softwares'>
         <div className='container w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
             <div className='heading'>
-                <h1 className='title  text-2xl font-bold '>Softwares</h1>
+                <h1 className='title  text-2xl font-bold lg:text-4xl'>Softwares</h1>
             </div>
             <div className="domains-name w-full  p-4 flex flex-col justify-evenly items-center md:flex-row">
               <div className="domains-name_item w-full flex flex-row flex-wrap justify-evenly items-center my-2 ">

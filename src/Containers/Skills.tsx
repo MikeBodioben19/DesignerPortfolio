@@ -4,11 +4,11 @@ import {dots1, dots2} from "../assets"
 
 const Skills = () => {
     return (
-        <div className='skills-section w-full flex items-center justify-center' id='skills'>
+        <div className='skills-section w-full flex items-center justify-center overflow-hidden' id='skills'>
             <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
                 <div className='heading relative'>
-                    <h1 className='title  text-2xl font-bold '>Skills</h1>
-                    <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10'>2</h1>
+                    <h1 className='title  text-2xl font-bold lg:text-4xl'>Skills</h1>
+                    <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>3 </h1>
                 </div>
                 <div className="skill-type w-full my-6 flex flex-col lg:flex-row">
                     <div className='w-full p-2 '>
@@ -98,14 +98,14 @@ const Skills = () => {
                                 <p className='w-[30%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                             <div className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[80%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white '>maîtrise de l'affordance</p>
+                                <p className=' w-[80%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white transition-all duration-300 hover:bg-blue-700 '>maîtrise de l'affordance</p>
                                 <p className='w-[20%] bg-yellow-600 p-3 rounded-full'></p>
                             </div>
                         </div>
                     </div>
                 </div>
                     <img src={dots1} alt="" className='dots-container absolute -z-10 -left-2 top-2' />
-                    <img src={dots2} alt="" className='dots-container absolute -z-10 -right-4 bottom-2' />
+                    <img src={dots2} alt="" className='dots-container absolute -z-10 -right-2 bottom-2' />
             </div>
         </div>
     )

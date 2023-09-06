@@ -7,8 +7,8 @@ const Projects = () => {
     <div className='projects-section w-full flex items-center justify-center'>
         <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
             <div className='heading relative'>
-                <h1 className='title  text-2xl font-bold '>Projects</h1>
-                <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10'>2</h1>
+                <h1 className='title  text-2xl font-bold lg:text-4xl'>Projects</h1>
+                <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>2</h1>
             </div>
             <div className="projects-type my-6">
                 <h2 className="project-type_name title text-xl font-bold mt-2 text-blue-950">Branding Design</h2>

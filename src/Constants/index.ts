@@ -108,3 +108,27 @@ export const hardSkills = [
         title:"maîtrise de l'affordance",
     },
 ]
+
+export const formations = [
+    {
+        id:1,
+        title:"Licence Technologique en Génie logiciel",
+        date:"2022-2023",
+        school:"IUT de Douala",
+        desc:"Au cours de cette année j'ai pu avoir une licence en génie logiciel. M'ayant ainsi permit d'avoir des capacités de conceptions d'applications web plus complexes et d'architectures variées. Egalement la maîtrise des languages tels que TypeScript  et des frameworks comme React.",
+    },
+    {
+        id:2,
+        title:"Diplôme Universitaire des Technologie en Génie Informatique",
+        date:"2019-2021",
+        school:"IUT de Douala",
+        desc:"Durant ces deux années j'ai pu acquérir des compétences en analyse et conception des systèmes d'informations,l'apprentissage des methodes et langages tels que MERISE et UML. Je me suis aussi familiarisé avec des outils tels que Bootstrap, TailwindCss et Figma.",
+    },
+    {
+        id:1,
+        title:"Baccalauréat en Maths et science de la vie et de la terre",
+        date:"2017-2018",
+        school:"Lycéé bilingue de Nyalla",
+        desc:"",
+    },
+]

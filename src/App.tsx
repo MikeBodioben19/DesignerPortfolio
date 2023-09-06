@@ -3,7 +3,7 @@
 import { Navbar } from './Components'
 
 import './App.css'
-import { About, Domains, Projects, Skills, Softwares } from './Containers'
+import { About, Domains, Formations, Projects, Skills, Softwares } from './Containers'
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
       <Softwares/>
       <Projects/>
       <Skills/>
+      <Formations/>
     </div>
     
   )
