@@ -1,3 +1,5 @@
+import { slide1,slide2,slide3 } from "../assets"
+
 export const navLinks = [
     {
         id: "about",
@@ -125,10 +127,40 @@ export const formations = [
         desc:"Durant ces deux années j'ai pu acquérir des compétences en analyse et conception des systèmes d'informations,l'apprentissage des methodes et langages tels que MERISE et UML. Je me suis aussi familiarisé avec des outils tels que Bootstrap, TailwindCss et Figma.",
     },
     {
-        id:1,
+        id:3,
         title:"Baccalauréat en Maths et science de la vie et de la terre",
         date:"2017-2018",
         school:"Lycéé bilingue de Nyalla",
-        desc:"",
+        desc:"Au terme de mes études secondaires, j’ai eu mon baccalauréat avec une mention passable et j’ai su que je voulais faire du design graphique.",
+    },
+]
+export const testimonials = [
+    {
+        id:1,
+        name:'Leida',
+        work:'Baker',
+        content :"Lorem ipsum dolor sit amet consectetur. A in odio sit convallis diam rhoncus nunc. Fermentum facilisis tortor suscipit viverra neque elit urna egestas sed. Malesuada eget dolor egestas amet. Elementum mus at scelerisque ipsum vel nisl. Malesuada volutpat cursus pharetra felis rhoncus ",
+        img: slide1,
+    },
+    {
+        id:2,
+        name:'Leida',
+        work:'Baker',
+        content :"Lorem ipsum dolor sit amet consectetur. A in odio sit convallis diam rhoncus nunc. Fermentum facilisis tortor suscipit viverra neque elit urna egestas sed. Malesuada eget dolor egestas amet. Elementum mus at scelerisque ipsum vel nisl. Malesuada volutpat cursus pharetra felis rhoncus ",
+        img: slide2,
+    },
+    {
+        id:3,
+        name:'Leida',
+        work:'Baker',
+        content :"Lorem ipsum dolor sit amet consectetur. A in odio sit convallis diam rhoncus nunc. Fermentum facilisis tortor suscipit viverra neque elit urna egestas sed. Malesuada eget dolor egestas amet. Elementum mus at scelerisque ipsum vel nisl. Malesuada volutpat cursus pharetra felis rhoncus ",
+        img: slide3,
+    },
+    {
+        id:4,
+        name:'Leida',
+        work:'Baker',
+        content :"Lorem ipsum dolor sit amet consectetur. A in odio sit convallis diam rhoncus nunc. Fermentum facilisis tortor suscipit viverra neque elit urna egestas sed. Malesuada eget dolor egestas amet. Elementum mus at scelerisque ipsum vel nisl. Malesuada volutpat cursus pharetra felis rhoncus ",
+        img: slide2,
     },
 ]

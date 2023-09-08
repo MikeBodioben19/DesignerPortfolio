@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+
+}
 body{
   font-family: 'jura', Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
 }
 .title{
   font-family: 'inter',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
