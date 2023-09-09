@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 
-import { Navbar, Caroussel } from './Components'
+import { Navbar, Caroussel, Footer } from './Components'
 
 import './App.css'
 import { About, Domains, Formations, Projects, Skills, Softwares } from './Containers'
@@ -17,6 +17,7 @@ function App() {
       <Skills/>
       <Formations/>
       <Caroussel/>
+      <Footer/>
     </div>
     
   )

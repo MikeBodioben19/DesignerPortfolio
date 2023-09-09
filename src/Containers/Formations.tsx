@@ -15,7 +15,7 @@ const Formations = () => {
           <h1 className='title  text-2xl font-bold lg:text-4xl'>Formations</h1>
           <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>4</h1>
         </div>
-        <VerticalTimeline>
+        <VerticalTimeline className='my-4'>
           {
             formations.map((item) => (
             <VerticalTimelineElement key={item.id}
