@@ -1,6 +1,5 @@
 import React from 'react'
 import { brandingDesignContent } from '../Constants'
-import { DiIllustrator } from 'react-icons/di'
 
 const Projects = () => {
   return (
@@ -13,19 +12,19 @@ const Projects = () => {
             <div className="projects-type my-6">
                 <h2 className="project-type_name title text-xl font-bold mt-2 text-blue-950">Branding Design</h2>
                 {brandingDesignContent.map((item) => (
-                    <div key={item.id} className='w-full flex flex-col lg:flex-row lg:gap-x-4'>
+                    <div key={item.id} className='w-full flex flex-col my-4 lg:flex-row lg:gap-x-4'>
                         <div className='lg:w-[500px]'>
                             <p className='font-bold text-xl my-4 '>{item.title}</p>
                             <p className='text-justify text-lg '>{item.content}</p>
                             <div className="tools flex my-4 items-center gap-x-4 ">
                                 <div>
-                                    <DiIllustrator size={40} className='text-yellow-500'/>
+                                    <item.icon size={40} className='text-yellow-500'/>
                                 </div>
-                                <div className='color w-[32px] h-[32px] bg-[#ffc265] '>
+                                <div className={`color w-[32px] h-[32px] bg-[${item.col1}] `}>
                                 </div>
-                                <div className='color w-[32px] h-[32px] bg-[#fff] shadow-md '>
+                                <div className={`color w-[32px] h-[32px] bg-[${item.col2}] shadow-md `}>
                                 </div>
-                                <div className='color w-[32px] h-[32px] bg-[#181818] '>
+                                <div className={`color w-[32px] h-[32px] bg-[${item.col3}] `}>
                                 </div>
                             </div>
                         </div>    

@@ -33,13 +33,27 @@ export const navLinks = [
 // {
 //     id: "references",
 //     title : "references",
+import { DiIllustrator, DiPhotoshop } from 'react-icons/di'
 
 export const brandingDesignContent = [
     {
         id: 1,
         title:"Menu pour kimy Foods",
         content:" Kimy Foods est un petit restaurant camerounais proposant des mets variés passants des hamburgers, aux croquettes et boissons naturelles.Ce meunu présente tous les mets disponibles dans une ambiance sobre et élégante. Avec de petits détails colorés pour attirer l'attention du client. ",
-    }
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#fffff',
+        col3:'#181818',
+    },
+    {
+        id: 2,
+        title:"Flyer pour les délices de Leida",
+        content:" Les délices de Leida est l'enseigne d'une jeune pâtissière camerounaise qui confectionne d'incroyoables pâtisseries pour ses clients. Ainsi l'usage des couleurs apporte une touche de délicatesse au flyer, en révélant ainsi le goût et la qualité de chacune de ses réalisations.",
+        icon: DiPhotoshop,
+        col1:'#ffc265',
+        col2:'#fffff',
+        col3:'#181818',
+    },
 ]
 
 export const softSkills = [

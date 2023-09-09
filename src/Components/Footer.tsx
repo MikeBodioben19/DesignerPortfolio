@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='w-full border-t-[1px] mt-2 border-white'></div>
-            <p className='text-lg text-white mt-2'>Made by <span className='text-yellow-500 font-bold'> Mike Bodioben </span>,2023 </p>
+            <p className='text-lg text-white mt-2'>Made by <span className='text-yellow-500 font-bold'> Mike Bodioben</span>, 2023 </p>
         </div>
     </div>
   )

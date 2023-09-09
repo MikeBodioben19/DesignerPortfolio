@@ -44,24 +44,7 @@ const backSlide = () =>{
             <div className='w-full '>
                 <div className='slider-container relative w-full h-full flex flex-row  '>
 
-                    <div className={`w-[300vw] absolute top-0 h-[400px] flex flex-row p-2 bg-green-900 `}
-                        style={{left : ${setCurrentVal}vw}
-                    >
-                        <div className='w-screen h-full bg-amber-400'>
-                            <h2 className='title text-2xl my-2'>Les délices de Leida</h2>
-                            <p className='text-md mb-4'>Lorem ipsum dolor sit.</p>
-                            <p className='text-md'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim. </p>
-                        </div>
-                        <div className='w-screen h-full bg-amber-400'>
-                            <h2 className='title text-2xl my-2'>Les délices de eida</h2>
-                            <p className='text-md mb-4'>Lorem ipsum dolor sit.</p>
-                            <p className='text-md'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim. </p>
-                        </div>
-                        <div className='w-screen h-full bg-amber-400'>
-                            <h2 className='title text-2xl my-2'>Les délices de Leida</h2>
-                            <p className='text-md mb-4'>Lorem ipsum dolor sit.</p>
-                            <p className='text-md'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim. </p>
-                        </div>
+                    <div className={`w-[300vw] absolute top-0 h-[400px] flex flex-row p-2 bg-green-900 `}>
 
                         {/* <img src={slides[currentIndex]} alt="" className='w-full h-full' /> */}
                         {/* {
