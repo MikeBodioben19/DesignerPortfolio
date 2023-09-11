@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { brandingDesignContent } from '../Constants'
 
 const Projects = () => {
@@ -24,7 +24,7 @@ const Projects = () => {
                                 </div>
                                 <div className={`color w-[32px] h-[32px] bg-[${item.col2}] shadow-md `}>
                                 </div>
-                                <div className={`color w-[32px] h-[32px] bg-[${item.col3}] `}>
+                                <div className={`color w-[32px] h-[32px] bg-[${item.col3}] shadow-md  `}>
                                 </div>
                             </div>
                         </div>    

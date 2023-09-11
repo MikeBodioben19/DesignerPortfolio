@@ -4,7 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 import { DiCssTricks,DiCreativecommonsBadge } from 'react-icons/di'
-import { AiOutlineHome,AiOutlineSafetyCertificate } from 'react-icons/ai'
+import { GrCertificate} from 'react-icons/gr'
 import { formations } from '../Constants';
 
 const Formations = () => {
@@ -22,7 +22,7 @@ const Formations = () => {
               className="vertical-timeline-element--work"
               date={item.date}
               iconStyle={{ background: 'rgb(234, 179, 8)', color: '#fff' }}
-              icon={<AiOutlineSafetyCertificate />}
+              icon={<GrCertificate />}
             >
             <h3 className="vertical-timeline-element-title title text-xl font-bold">{item.title}</h3>
             <h4 className="vertical-timeline-element-subtitle text-lg text-blue-700 font-medium">{item.school}</h4>

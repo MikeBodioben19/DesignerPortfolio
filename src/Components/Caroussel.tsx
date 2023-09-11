@@ -28,8 +28,8 @@ const Caroussel = () => {
             </div>
             <div className="caroussel mt-5 overflow-hidden w-full flex flex-col justify-center lg:w-[100%]">
                 <div className="inner whitespace-nowrap transition-all duration-500" style={{transform : `translate(-${activeIndex *100}%)`}}>
-                    {testimonials.map((item) => {
-                    return <CarousselItem item={item}/> })}
+                    {testimonials.map((item) => (
+                        <CarousselItem key={item.id} item={item}/> ))}
                 </div>
                 <div className='caroussel-controls my-4 w-full relative flex flex-row justify-between items-center'>
                     <div className='hidden cursor-pointer px-8 py-1 border-[1px] border-black transition-all duration-300 md:block hover:border-yellow-500 hover:text-yellow-500 '>

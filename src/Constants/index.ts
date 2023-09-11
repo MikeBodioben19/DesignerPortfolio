@@ -51,7 +51,7 @@ export const brandingDesignContent = [
         content:" Les délices de Leida est l'enseigne d'une jeune pâtissière camerounaise qui confectionne d'incroyoables pâtisseries pour ses clients. Ainsi l'usage des couleurs apporte une touche de délicatesse au flyer, en révélant ainsi le goût et la qualité de chacune de ses réalisations.",
         icon: DiPhotoshop,
         col1:'#ffc265',
-        col2:'#fffff',
+        col2:'#f1f1f1',
         col3:'#181818',
     },
 ]
