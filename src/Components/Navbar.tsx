@@ -39,7 +39,7 @@ const Navbar = () => {
                     <div className="menu absolute z-10 w-full h-[400px] top-[50px] p-4 bg-yellow-500 flex flex-col transition-all duration-1000 lg:hidden">
                         <ul className='w-full flex flex-col items-center'>
                             {navLinks.map((link) => (
-                                <li key={link.id} className='my-2'><a href={`#${link.id}`} className=' text-xl capitalize font-medium transition-all  duration-300 hover:tracking-wider hover:text-white' onClick={openMenu}>{link.title}</a></li>
+                                <li key={link.id} className='my-2'><a href={`#${link.id}`} className=' text-xl capitalize font-medium transition-all  duration-300 hover:tracking-wider hover:text-white' onClick={closeMenu}>{link.title}</a></li>
                             ))}
                         </ul>
                         <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button>
