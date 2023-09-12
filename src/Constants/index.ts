@@ -35,15 +35,27 @@ export const navLinks = [
 //     title : "references",
 import { DiIllustrator, DiPhotoshop } from 'react-icons/di'
 
+export const slidesBranding  = [
+    slide1,
+    slide2,
+    slide3,
+]
+
 export const brandingDesignContent = [
     {
         id: 1,
         title:"Menu pour kimy Foods",
         content:" Kimy Foods est un petit restaurant camerounais proposant des mets variés passants des hamburgers, aux croquettes et boissons naturelles.Ce meunu présente tous les mets disponibles dans une ambiance sobre et élégante. Avec de petits détails colorés pour attirer l'attention du client. ",
-        icon: DiIllustrator,
+        icon: DiPhotoshop,
         col1:'#ffc265',
         col2:'#fffff',
         col3:'#181818',
+        flex:'flex-row',
+        slides  : [
+            slide1,
+            slide2,
+            slide3,
+        ],
     },
     {
         id: 2,
@@ -53,6 +65,92 @@ export const brandingDesignContent = [
         col1:'#ffc265',
         col2:'#f1f1f1',
         col3:'#181818',
+        flex:'flex-row-reverse',
+    },
+]
+export const logoDesignContent = [
+    {
+        id: 1,
+        title:"Pexple Logo concept",
+        content:" Pexple est un logo concept crée par moi pour une marque fictive d’équipement de protection.Les couleurs accentuent les détails liés à la typographie du logo. ",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#fffff',
+        col3:'#181818',
+        flex:'flex-row',
+    },
+    {
+        id: 2,
+        title:"Converse Logo concept",
+        content:" Ceci est un conept logo fait par mes soins et inspiré du très connu logo de la marque Converse.J’ai décidé de retravailler ce logo en y apportant une touche de légèreté et de simplicité mais également un effet subliminal entre le “C” et l’étoile. ",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#f1f1f1',
+        col3:'#181818',
+        flex:'flex-row-reverse',
+    },
+    {
+        id: 3,
+        title:"JHIRE Logo ",
+        content:" JHire est un prototype de plateforme en ligne où des développeurs juniors pourront proposé leur service aux entreprise camerounaise.Ce logo est un subtil mélange de blanc, noir et vert qui contrastent parfaitement pour faire resortir les lettres “J” et “H” du logo. ",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#f1f1f1',
+        col3:'#181818',
+        flex:'flex-row',
+    },
+    {
+        id: 4,
+        title:"Geneva Hôtel Logo concept",
+        content:" Ceci est un concept logo pour un hôtel fictif 5 étoiles.Il s’agit d’un logo de type monogramme formé avec les lettres “G” et “H”. Et l’utilisation des couleurs or et vert pour représenter le haut standing et de luxe de l’hôtel. ",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#f1f1f1',
+        col3:'#181818',
+        flex:'flex-row-reverse',
+    },
+]
+
+export const packagingDesignContent = [
+    {
+        id: 1,
+        title:"Supafee Packaging",
+        content:" Supafee est un packaging concept crée par moi pour une marque fictive de café. L’utilisation de la couleur marron permet de révéler les détails floraux dorés mais aussi la couleur blanche de la typographie et le logo. ",
+        icon: DiPhotoshop,
+        col1:'#ffc265',
+        col2:'#fffff',
+        col3:'#181818',
+        flex:'flex-row',
+    },
+    {
+        id: 2,
+        title:"Krack Packaging",
+        content:"Ceci est un packaging concept fait pour une marque de chips fictive. Ce packaging est fait pour un paquet de chip de la marque. Il permet ainsi au client de visualiser à quoi ressemblerait le produit fini. ",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#f1f1f1',
+        col3:'#181818',
+        flex:'flex-row-reverse',
+    },
+    {
+        id: 3,
+        title:"Yggy-Flake Packaging",
+        content:"Yggy-Flake si elle existait serait une marque de céréales multivitaminée . Ce packaging concept est fait pour une boite de céréale de 500g avec des couleurs attractives.",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#f1f1f1',
+        col3:'#181818',
+        flex:'flex-row',
+    },
+    {
+        id: 4,
+        title:"Supacream Packaging",
+        content:"Une fois de plus il s’agit d’un concept de packaging pour une marque de lait. La création du packaging design est passée par la réalisation du logo de l’enseigne. ",
+        icon: DiIllustrator,
+        col1:'#ffc265',
+        col2:'#f1f1f1',
+        col3:'#181818',
+        flex:'flex-row-reverse',
     },
 ]
 

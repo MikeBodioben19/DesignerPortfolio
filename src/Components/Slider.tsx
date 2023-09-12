@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import {slide1,slide2, slide3} from  '../assets'
 import { AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 import { RxDotFilled } from 'react-icons/rx'
-import { testimonials } from '../Constants'
+import { brandingDesignContent, slidesBranding, testimonials } from '../Constants'
 
 const Slider = () => {
     const slides  = [
@@ -25,59 +25,36 @@ const Slider = () => {
     const goToIndex = (slideIndex:number) =>{
         setCurrentIndex(slideIndex)
     }
-const [currentVal, setCurrentVal] = useState(0)
-const backSlide = () =>{
-    const val = currentVal === 0;
-    const newVal = currentVal -100
-    setCurrentVal(newVal)
-    console.log(newVal);
-    
-}
+
+
 
   return (
-    <div className='tesimonials-section w-full flex items-center justify-center' id='testimonials'>
-        <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
-            <div className='heading relative'>
-                <h1 className='title  text-2xl font-bold lg:text-4xl'>Testimonials</h1>
-                <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>5</h1>
-            </div>
-            <div className='w-full '>
-                <div className='slider-container relative w-full h-full flex flex-row  '>
+    <div className='slider-section relative w-full h-full flex items-center justify-center'>
+        <div className='container relative w-full h-full flex flex-col justify-center items-center group transition-all duration-500'>
+            <div className='w-full h-full '>
+                <img src={slidesBranding[currentIndex]} className='w-full h-full object-cover' alt="" />
 
-                    <div className={`w-[300vw] absolute top-0 h-[400px] flex flex-row p-2 bg-green-900 `}>
 
-                        {/* <img src={slides[currentIndex]} alt="" className='w-full h-full' /> */}
-                        {/* {
-                            testimonials.map((item) => (
-                                <div className=' w-full h-full p-2'>
-                                    <h2 className='title text-2xl my-2'>{item.name}</h2>
-                                    <p className='text-md mb-4'>{item.work}</p>
-                                    <p className='text-md'>{item.content} </p>
-                                </div>
-                            ))
-                        } */}
-                    </div>
-                </div>
-                <div className='w-full relative flex flex-row justify-between items-center'>
-                    <div className=' cursor-pointer px-8 py-2 border-2 transition-all duration-300'>
-                        <AiOutlineArrowLeft onClick={backSlide} size={30} className=''/>
-                    </div>
 
-                    <div className='flex'>
+                    {/* <div className='flex'>
                         {
-                            slides.map((item,index) => (
+                            slidesBranding.map((item,index) => (
                                 <div key={index} className='text-xl cursor-pointer' onClick={() => goToIndex(index)} >
                                     <RxDotFilled/>
                                 </div>
                             ))
                         }
-                    </div>
+                    </div> */}
 
-                    <div className='block cursor-pointer px-8 py-2 border-2 transition-all duration-300'>
-                        <AiOutlineArrowRight onClick={nextSlide} size={30} />
-                    </div>
 
-                </div>
+
+                
+            </div>
+            <div className='absolute hidden group-hover:block left-0 translate-y-1/2 cursor-pointer  transition-all duration-500'>
+                <AiOutlineArrowLeft onClick={prevSlide} size={30} className=''/>
+            </div>
+            <div className='absolute hidden group-hover:block right-0  translate-y-1/2 cursor-pointer  transition-all duration-300'>
+                <AiOutlineArrowRight onClick={nextSlide} size={30} />
             </div>
         </div>
 

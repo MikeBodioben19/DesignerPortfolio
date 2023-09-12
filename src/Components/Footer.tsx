@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AiOutlineMenu, AiOutlineClose, AiOutlineBehance, AiOutlineDribbble, AiOutlineLinkedin,AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineBehance, AiOutlineDribbble, AiOutlineLinkedin,AiOutlineMail } from 'react-icons/ai'
 import { PiTelegramLogoLight} from 'react-icons/pi'
 
 const Footer = () => {
@@ -8,9 +8,10 @@ const Footer = () => {
     <div className='footer-section w-full bg-blue-950 flex items-center justify-center' >
         <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
             <div className='w-full flex flex-col justify-between items-center md:flex-row'>
-                <div className='flex gap-x-2 justify-center items-center text-lg text-white'>
+                <div className='flex gap-x-2 flex-col justify-center items-center text-lg text-white md:flex-row'>
                     <AiOutlineMail/>
-                    <p className=''>Miguelbodio@gmail.com | </p> 
+                    <p className=''>Miguelbodio@gmail.com </p>
+                    <span className='hidden md:block'>|</span>   
                     <p className=''>Mike1ben9@outlook.com</p>
                 </div>
                 <div className="social-link w-[250px] flex flex-row justify-between items-center">
