@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 
-import { Navbar, Caroussel, Footer } from './Components'
+import { Navbar, Caroussel, Footer, Loader } from './Components'
 
 import './App.css'
 import { About, Domains, Formations, Projects, Skills, Softwares } from './Containers'
@@ -8,7 +8,7 @@ import { About, Domains, Formations, Projects, Skills, Softwares } from './Conta
 function App() {
 
   return (
-    <div className='w-full'>
+    <div className='w-full relative'>
       <Navbar/>
       <About/>
       <Domains/>
@@ -17,6 +17,7 @@ function App() {
       <Skills/>
       <Formations/>
       <Caroussel/>
+      <Loader/>
       <Footer/>
     </div>
     
