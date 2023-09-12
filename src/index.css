@@ -48,3 +48,13 @@ body{
 .vertical-timeline::before{
   background-color: rgb(234, 179, 8);
 }
+
+.slider-container .control{
+  display: none;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-duration: 5000ms;
+}
+.slider-container:hover .control{
+  display: block;
+}

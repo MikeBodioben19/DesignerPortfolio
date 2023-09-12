@@ -30,7 +30,9 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className="image-container w-full h-[500px] bg-red-400 flex flex-col gap-y-2 lg:w-[500px]">
-                                <Slider/>
+                                <Slider
+                                imgSrc={item.slides}
+                                />
                             </div>
 
                         </div>
@@ -83,7 +85,9 @@ const Projects = () => {
                                 </div>
                             </div>
                             < div className="image-container w-full h-[500px] flex flex-col gap-y-2 lg:w-[500px]">
-                                <Slider/>
+                            <Slider
+                                imgSrc={item.slides}
+                                />
                                 
                             </div>
 
