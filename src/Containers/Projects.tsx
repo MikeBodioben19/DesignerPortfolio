@@ -1,8 +1,40 @@
-
+import { useRef,useEffect } from 'react'
 import { Slider } from '../Components'
 import { brandingDesignContent, illustrationContent, logoDesignContent, packagingDesignContent } from '../Constants'
+import { motion,useAnimation, useInView } from 'framer-motion'
+
 
 const Projects = () => {
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once : true});
+
+    const mainControls = useAnimation()
+    const slideControls = useAnimation()
+
+    useEffect(() => {
+      if (isInView)
+        mainControls.start("visible")
+        slideControls.start("visible")
+    }, [isInView])
+
+    const fadeUpVariants = {
+        animated : {
+            hidden : { opacity : 0, y : 75},
+            visible : { opacity : 1, y : 0},
+            transition : {
+                hidden: {
+                    delay : 0.5,
+                    duration : 1,
+                },
+                visible: {
+                    delay : 0.5,
+                    duration : 1,
+                },
+            }
+
+        }
+    }
+
     return (
         <div className='projects-section w-full flex items-center justify-center'>
             <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
@@ -14,7 +46,11 @@ const Projects = () => {
                     <h2 className="project-type_name title text-2xl text-center font-bold mt-2 text-blue-950 md:text-4xl">Branding Design</h2>
                     {brandingDesignContent.map((item) => (
                         <div key={item.id} className={`w-full flex flex-col  justify-center my-4 lg:${item.flex} lg:gap-x-4`}>
-                            <div className='lg:w-[500px]'>
+                            <motion.div
+                                variants={fadeUpVariants}
+                                animate={mainControls}
+                                className='lg:w-[500px]'>
+                                    
                                 <p className='font-bold text-xl my-4 '>{item.title}</p>
                                 <p className='text-justify text-lg '>{item.content}</p>
                                 <div className="tools flex my-4 items-center gap-x-4 ">
@@ -28,7 +64,7 @@ const Projects = () => {
                                     <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col3 }} >
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                             <div className="image-container w-full h-[500px] bg-red-400 flex flex-col gap-y-2 lg:w-[500px]">
                                 <Slider
                                     imgSrc={item.slides}
@@ -39,7 +75,7 @@ const Projects = () => {
                     ))}
                     <div className='w-full flex flex-col justify-center items-center mt-10 mb-4'>
                         <h2 className="project-type_name title text-2xl text-center font-bold mt-2 text-blue-950 md:text-4xl">Logo Design</h2>
-                        <div className="container w-full bg-indigo-400 flex-wrap my-4 flex  justify-center items-start lg:flex-row lg:gap-x-4">
+                        <div className="container w-full  flex-wrap my-4 flex  justify-center items-start lg:flex-row lg:gap-x-4">
                             {
                                 logoDesignContent.map((item) => (
                                     <div key={item.id} className='w-full lg:w-[500px] my-4 '>

@@ -58,3 +58,16 @@ body{
 .slider-container:hover .control{
   display: block;
 }
+.loader-container {
+  z-index :1000;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10%;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #eab308;
+  border-radius: 10px;
+
+}

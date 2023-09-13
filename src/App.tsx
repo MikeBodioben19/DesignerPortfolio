@@ -1,14 +1,24 @@
-// import { useState } from 'react'
+
+
+
+import { Suspense, lazy } from 'react'
+import './App.css'
 
 import { Navbar, Caroussel, Footer, Loader } from './Components'
 
-import './App.css'
-import { About, Domains, Formations, Projects, Skills, Softwares } from './Containers'
+const About = lazy(()=> import ("./Containers/About"))
+const Domains = lazy(()=> import ("./Containers/Domains"))
+const Formations = lazy(()=> import ("./Containers/Formations"))
+const Projects = lazy(()=> import ("./Containers/Projects"))
+const Skills = lazy(()=> import ("./Containers/Skills"))
+const Softwares = lazy(()=> import ("./Containers/Softwares"))
+
 
 function App() {
 
   return (
-    <div className='w-full relative'>
+    <Suspense fallback={<Loader/>}>
+
       <Navbar/>
       <About/>
       <Domains/>
@@ -17,9 +27,9 @@ function App() {
       <Skills/>
       <Formations/>
       <Caroussel/>
-      <Loader/>
-      <Footer/>
-    </div>
+      <Footer/> 
+    
+    </Suspense>
     
   )
 }

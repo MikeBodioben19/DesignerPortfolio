@@ -1,8 +1,22 @@
-import React from 'react'
+
+import { motion } from 'framer-motion'
 import { hardSkills, softSkills } from '../Constants'
 import {dots1, dots2} from "../assets"
 
 const Skills = () => {
+    const fadeInAnimation = {
+        initial : {
+            opacity :0,
+            y:100,
+        },
+        animate : (index:number) => ({
+            opacity : 1,
+            y : 0,
+            transitiion : {
+                delay : 0.5* index,
+            }
+        })
+    }
     return (
         <div className='skills-section w-full flex items-center justify-center overflow-hidden' id='skills'>
             <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
@@ -15,10 +29,16 @@ const Skills = () => {
                         <h2 className="skill-type_name title text-xl font-bold my-4 text-blue-950 text-center md:text-2xl">Soft skills</h2>
                         <div className="skill-container_small flex flex-col gap-y-4">
                             {
-                                softSkills.map((item) => (
-                                    <div key={item.id} className='w-full  bg-yellow-600 rounded-full p-2 my-2 text-center shadow-md sm:hidden'>
-                                        <p className='text-lg capitalize'>{item.title}</p>
-                                    </div>
+                                softSkills.map((item,index) => (
+                                    <motion.ul 
+                                        initial ='initial'
+                                        whileInView="animate"
+                                        variants={fadeInAnimation}
+                                        viewport={{once : true}}
+                                        custom={index}
+                                        key={item.id} className='w-full  bg-yellow-600 rounded-full p-2 my-2 text-center shadow-md sm:hidden'>
+                                        <li className='text-lg capitalize'>{item.title}</li>
+                                    </motion.ul>
                                 ))
                             }
                         </div>

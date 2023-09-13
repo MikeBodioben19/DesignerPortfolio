@@ -29,22 +29,34 @@ const Slider = ({imgSrc}:Props) => {
     //     setCurrentIndex(slideIndex)
     // }
 
+    const fadeUpVariants = {
+        animated : {
+            hidden : { opacity : 0, y : 75},
+            visible : { opacity : 1, y : 0},
+            transition : {
+                hidden: {
+                    delay : 0.5,
+                    duration : 1,
+                },
+                visible: {
+                    delay : 0.5,
+                    duration : 1,
+                },
+            }
 
+        }
+    }
 
   return (
-    <div className='slider-section relative w-full h-full flex items-center justify-center'>
+    <motion.div 
+        variants={fadeUpVariants}
+        animate='animated'
+        className='slider-section relative w-full h-full flex items-center justify-center'>
         <div className='slider-container relative w-full h-full flex flex-col justify-center items-center '>
-            <motion.div className='w-full h-full '
-                initial={{opacity:0}}
-                animate={{opacity:1}}
-                transition={{delay :1.5,duration : 1.5}}
+            <div className='w-full h-full '   
             >
-                <motion.img 
-                    initial={{scaleX:0}}
-                    animate={{scaleX: 1}}
-                    transition={{delay :1.5,duration : 1.5}}
-                    src={imgSrc[currentIndex]} className='w-full h-full object-cover' alt="" />                
-            </motion.div>
+                <motion.img src={imgSrc[currentIndex]} className='w-full h-full object-cover' alt="" />                
+            </div>
             <div className='control absolute left-0 translate-y-1/2 cursor-pointer text-white rounded-full p-2 bg-black/10'>
                 <AiOutlineArrowLeft onClick={prevSlide} size={30} className=''/>
             </div>
@@ -53,7 +65,7 @@ const Slider = ({imgSrc}:Props) => {
             </div>
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 
