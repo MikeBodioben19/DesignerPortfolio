@@ -82,6 +82,11 @@ export const logoDesignContent = [
         col2:'#fffff',
         col3:'#181818',
         flex:'flex-row',
+        slides  : [
+            slide1,
+            slide2,
+            slide3,
+        ],
     },
     {
         id: 2,
@@ -92,6 +97,11 @@ export const logoDesignContent = [
         col2:'#f1f1f1',
         col3:'#181818',
         flex:'flex-row-reverse',
+        slides  : [
+            slide1,
+            slide2,
+            slide3,
+        ],
     },
     {
         id: 3,
@@ -102,6 +112,11 @@ export const logoDesignContent = [
         col2:'#f1f1f1',
         col3:'#181818',
         flex:'flex-row',
+        slides  : [
+            slide1,
+            slide2,
+            slide3,
+        ],
     },
     {
         id: 4,
@@ -112,6 +127,11 @@ export const logoDesignContent = [
         col2:'#f1f1f1',
         col3:'#181818',
         flex:'flex-row-reverse',
+        slides  : [
+            slide1,
+            slide2,
+            slide3,
+        ],
     },
 ]
 

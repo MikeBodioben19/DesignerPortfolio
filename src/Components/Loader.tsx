@@ -52,8 +52,8 @@ const Loader = () => {
         <div className="loader-container flex flex-col items-center justify-center w-full h-full">
             <motion.div 
                 variants={{
-                    hidden : {opacity : 0, y : -50},
-                    visible : {opacity : 1, y : 0},
+                    hidden : {opacity : 0},
+                    visible : {opacity : 1},
                 }}
                 initial = "hidden"
                 animate = "visible"

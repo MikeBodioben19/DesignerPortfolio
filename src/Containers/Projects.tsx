@@ -2,6 +2,7 @@ import { useRef,useEffect } from 'react'
 import { Slider } from '../Components'
 import { brandingDesignContent, illustrationContent, logoDesignContent, packagingDesignContent } from '../Constants'
 import { motion,useAnimation, useInView } from 'framer-motion'
+import { fadeInAnimation, fadeInAnimation2, fadeUpVariants } from '../Animations'
 
 
 const Projects = () => {
@@ -17,38 +18,25 @@ const Projects = () => {
         slideControls.start("visible")
     }, [isInView])
 
-    const fadeUpVariants = {
-        animated : {
-            hidden : { opacity : 0, y : 75},
-            visible : { opacity : 1, y : 0},
-            transition : {
-                hidden: {
-                    delay : 0.5,
-                    duration : 1,
-                },
-                visible: {
-                    delay : 0.5,
-                    duration : 1,
-                },
-            }
-
-        }
-    }
 
     return (
         <div className='projects-section w-full flex items-center justify-center'>
             <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
                 <div className='heading relative'>
                     <h1 className='title  text-2xl font-bold lg:text-4xl'>Projects</h1>
-                    <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>2</h1>
+                    <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>3</h1>
                 </div>
                 <div className="projects-type flex flex-col my-6 ">
                     <h2 className="project-type_name title text-2xl text-center font-bold mt-2 text-blue-950 md:text-4xl">Branding Design</h2>
-                    {brandingDesignContent.map((item) => (
-                        <div key={item.id} className={`w-full flex flex-col  justify-center my-4 lg:${item.flex} lg:gap-x-4`}>
-                            <motion.div
-                                variants={fadeUpVariants}
-                                animate={mainControls}
+                    {brandingDesignContent.map((item,index) => (
+                        <motion.div ref={ref}
+                            variants={fadeUpVariants}
+                            initial = 'hidden'
+                            whileInView='visible'
+                            viewport={{once : true}}
+                            custom={index}
+                          key={item.id} className={`w-full flex flex-col  justify-center my-4 lg:${item.flex} lg:gap-x-4`}>
+                            <div
                                 className='lg:w-[500px]'>
                                     
                                 <p className='font-bold text-xl my-4 '>{item.title}</p>
@@ -64,21 +52,27 @@ const Projects = () => {
                                     <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col3 }} >
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                             <div className="image-container w-full h-[500px] bg-red-400 flex flex-col gap-y-2 lg:w-[500px]">
                                 <Slider
                                     imgSrc={item.slides}
                                 />
                             </div>
 
-                        </div>
+                        </motion.div>
                     ))}
                     <div className='w-full flex flex-col justify-center items-center mt-10 mb-4'>
                         <h2 className="project-type_name title text-2xl text-center font-bold mt-2 text-blue-950 md:text-4xl">Logo Design</h2>
                         <div className="container w-full  flex-wrap my-4 flex  justify-center items-start lg:flex-row lg:gap-x-4">
                             {
-                                logoDesignContent.map((item) => (
-                                    <div key={item.id} className='w-full lg:w-[500px] my-4 '>
+                                logoDesignContent.map((item, index) => (
+                                    <motion.div 
+                                        variants={fadeInAnimation}
+                                        initial='hidden'
+                                        whileInView='animate'
+                                        viewport={{once : true}}
+                                        custom={index}
+                                        key={item.id} className='w-full lg:w-[500px] my-4 '>
                                         <p className='font-bold text-xl my-4  '>{item.title}</p>
                                         <p className='w-full text-justify text-lg lg:w-[500px]'>{item.content}</p>
                                         <div className="tools flex my-4 items-center gap-x-4 ">
@@ -92,19 +86,26 @@ const Projects = () => {
                                             <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col3 }} >
                                             </div>
                                         </div>
-                                        <div className="image-container flex flex-col gap-y-2">
-                                            <div className="main-image w-full h-[500px] mt-4 bg-gray-400 lg:w-[500px]">
-                                            </div>
+                                        <div className="image-container w-full h-[500px] flex flex-col gap-y-2">
+                                            <Slider
+                                                imgSrc={item.slides}
+                                            />
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))
                             }
                         </div>
                     </div>
 
                     <h2 className="project-type_name title text-2xl text-center font-bold mt-2 text-blue-950 md:text-4xl">Packaging Design</h2>
-                    {packagingDesignContent.map((item) => (
-                        <div key={item.id} className={`w-full flex flex-col justify-center my-4 lg:${item.flex} lg:gap-x-4`}>
+                    {packagingDesignContent.map((item,index) => (
+                        <motion.div 
+                            variants={fadeInAnimation2}
+                            initial='hidden'
+                            whileInView='animate'
+                            viewport={{once : true}}
+                            custom={index}
+                            key={item.id} className={`w-full flex flex-col justify-center my-4 lg:${item.flex} lg:gap-x-4`}>
                             <div className='lg:w-[500px]'>
                                 <p className='font-bold text-xl my-4 '>{item.title}</p>
                                 <p className='text-justify text-lg '>{item.content}</p>
@@ -127,7 +128,7 @@ const Projects = () => {
 
                             </div>
 
-                        </div>
+                        </motion.div>
                     ))}
 
                     <div className='w-full flex flex-col justify-center items-center mt-10 mb-4'>

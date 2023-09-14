@@ -1,10 +1,11 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 
 import {CarousselItem} from './index'
 import { testimonials } from '../Constants'
 import { AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 import { RxDotFilled } from 'react-icons/rx'
-
+import { motion } from 'framer-motion'
+import { fadeUpAnimation } from '../Animations'
 
 
 const Caroussel = () => {
@@ -21,12 +22,17 @@ const Caroussel = () => {
  
   return (
     <div className='tesimonials-section w-full flex items-center justify-center' id='testimonials'>
-        <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
+        <motion.div 
+            variants={fadeUpAnimation}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{once : true}} 
+            className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
             <div className='heading relative'>
                 <h1 className='title  text-2xl font-bold lg:text-4xl'>Testimonials</h1>
                 <h1 className=' underTitle absolute text-5xl font-bold left-1/2 text-blue-900 -top-1/2 -z-10 md:text-7xl'>5</h1>
             </div>
-            <div className="caroussel mt-5 overflow-hidden w-full flex flex-col justify-center lg:w-[100%]">
+            <div className="caroussel mt-8 overflow-hidden w-full flex flex-col justify-center lg:w-[100%]">
                 <div className="inner whitespace-nowrap transition-all duration-500" style={{transform : `translate(-${activeIndex *100}%)`}}>
                     {testimonials.map((item) => (
                         <CarousselItem key={item.id} item={item}/> ))}
@@ -56,7 +62,7 @@ const Caroussel = () => {
 
                 </div>
             </div>
-        </div>   
+        </motion.div>   
 
         
     </div>
