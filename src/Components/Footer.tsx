@@ -18,7 +18,8 @@ const Footer = () => {
                                     <a href="https://behance.net/mikebodioben" className=' flex justify-center items-center  w-[40px] h-[40px]  cursor-pointer border-transparent border-2 text-white transition-all duration-500 hover:border-2 hover:border-yellow-500 hover:text-yellow-500' ><AiOutlineBehance size={24} /></a>
                                     <a href="https://dribbble.com/mikeben19" className=' flex justify-center items-center  w-[40px] h-[40px]  cursor-pointer border-transparent border-2 text-white transition-all duration-500 hover:border-2 hover:border-yellow-500 hover:text-yellow-500' ><AiOutlineDribbble size={24} /></a>
                                     <a href="https://linkedin.com/in/mike-bodioben" className=' flex justify-center items-center w-[40px] h-[40px] cursor-pointer border-transparent border-2 text-white transition-all duration-500 hover:border-2 hover:border-yellow-500 hover:text-yellow-500' ><AiOutlineLinkedin size={24} /></a>
-                                    <a href="https://linkedin.com/in/mike-bodioben" className=' flex justify-center items-center w-[40px] h-[40px] cursor-pointer border-transparent border-2 text-white transition-all duration-500 hover:border-2 hover:border-yellow-500 hover:text-yellow-500' ><PiTelegramLogoLight size={24} /></a>
+                                    <a href="https://t.me/Mike_Ben19" className=' flex justify-center items-center w-[40px] h-[40px] cursor-pointer border-transparent border-2 text-white transition-all duration-500 hover:border-2 hover:border-yellow-500 hover:text-yellow-500' ><PiTelegramLogoLight size={24} /></a>
+                                    
                 </div>
             </div>
             <div className='w-full border-t-[1px] mt-2 border-white'></div>

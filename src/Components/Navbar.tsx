@@ -1,8 +1,11 @@
-import React from 'react'
+
 import { useState } from 'react';
 
 import { AiOutlineMenu, AiOutlineClose, AiOutlineBehance, AiOutlineDribbble, AiOutlineLinkedin } from 'react-icons/ai'
+import { PiTelegramLogoLight} from 'react-icons/pi'
+
 import { navLinks } from '../Constants';
+
 
 const Navbar = () => {
 
@@ -32,7 +35,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-                <button className='hidden bg-white mx-2 w-[150px] p-2 transition-all duration-500 lg:block hover:bg-blue-950 hover:text-white'>Download my cv</button>
+                <a href='/CV.pdf' className='hidden bg-white mx-2 w-[150px] p-2 transition-all duration-500 lg:block hover:bg-blue-950 hover:text-white'>Download my cv</a>
             </div>
             {
                 toggleMenu ?
@@ -54,11 +57,13 @@ const Navbar = () => {
                                 <li key={link.id} className='my-2'><a href={`#${link.id}`} className=' text-xl capitalize font-medium transition-all duration-300 ' onClick={closeMenu}>{link.title}</a></li>
                             ))}
                         </ul>
-                        <button className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</button>
+                        <a href='/CV.pdf' className='bg-white mx-auto my-2 w-[250px] p-2 transition-all duration-500 hover:bg-blue-950 hover:text-white'>Download my cv</a>
                         <div className="social-link w-[250px]  mx-auto flex flex-row justify-between items-center">
                             <a href="https://behance.net/mikebodioben" className=' flex justify-center items-center  w-[40px] h-[40px]  cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineBehance size={24} /></a>
                             <a href="https://dribbble.com/mikeben19" className=' flex justify-center items-center  w-[40px] h-[40px]  cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineDribbble size={24} /></a>
                             <a href="https://linkedin.com/in/mike-bodioben" className=' flex justify-center items-center w-[40px] h-[40px] cursor-pointer border-transparent border-2 transition-all duration-500 hover:border-2 hover:border-white hover:text-white' ><AiOutlineLinkedin size={24} /></a>
+                            <a href="https://t.me/Mike_Ben19" className=' flex justify-center items-center w-[40px] h-[40px] cursor-pointer border-transparent border-2 text-white transition-all duration-500 hover:border-2 hover:border-yellow-500 hover:text-yellow-500' ><PiTelegramLogoLight size={24} /></a>
+
                         </div>
                     </div>
 

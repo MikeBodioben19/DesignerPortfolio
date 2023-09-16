@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { DiIllustrator, DiPhotoshop} from 'react-icons/di'
 import { FaFigma} from 'react-icons/fa'

@@ -1,8 +1,9 @@
 import { useRef,useEffect } from 'react'
 import { Slider } from '../Components'
-import { brandingDesignContent, illustrationContent, logoDesignContent, packagingDesignContent } from '../Constants'
+import { UiUxDesignContent, brandingDesignContent, illustrationContent, logoDesignContent, packagingDesignContent } from '../Constants'
 import { motion,useAnimation, useInView } from 'framer-motion'
 import { fadeInAnimation, fadeInAnimation2, fadeUpVariants } from '../Animations'
+import { shape } from '../assets'
 
 
 const Projects = () => {
@@ -20,7 +21,7 @@ const Projects = () => {
 
 
     return (
-        <div className='projects-section w-full flex items-center justify-center'>
+        <div className='projects-section w-full flex items-center justify-center' id='projects'>
             <div className='container relative w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center'>
                 <div className='heading relative'>
                     <h1 className='title  text-2xl font-bold lg:text-4xl'>Projects</h1>
@@ -53,7 +54,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="image-container w-full h-[500px] bg-red-400 flex flex-col gap-y-2 lg:w-[500px]">
+                            <div className="image-container w-full h-[500px]  flex flex-col gap-y-2 lg:w-[500px]">
                                 <Slider
                                     imgSrc={item.slides}
                                 />
@@ -160,8 +161,45 @@ const Projects = () => {
                             }
                         </div>
                     </div>
+
+                    <h2 className="project-type_name title text-2xl text-center font-bold mt-2 text-blue-950 md:text-4xl">UI/UX Design</h2>
+                    {UiUxDesignContent.map((item,index) => (
+                        <motion.div ref={ref}
+                            variants={fadeUpVariants}
+                            initial = 'hidden'
+                            whileInView='visible'
+                            viewport={{once : true}}
+                            custom={index}
+                          key={item.id} className={`w-full flex flex-col  justify-center my-4 lg:${item.flex} lg:gap-x-4`}>
+                            <div
+                                className='lg:w-[500px]'>
+                                    
+                                <p className='font-bold text-xl my-4 '>{item.title}</p>
+                                <p className='text-justify text-lg '>{item.content}</p>
+                                <div className="tools flex my-4 items-center gap-x-4 ">
+                                    <div>
+                                        <item.icon size={40} className='text-yellow-500' />
+                                    </div>
+                                    <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col1 }}>
+                                    </div>
+                                    <div className={`color w-[32px] h-[32px] shadow-md `} style={{ backgroundColor: item.col2 }} >
+                                    </div>
+                                    <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col3 }} >
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="image-container w-full h-[500px]  flex flex-col gap-y-2 lg:w-[500px]">
+                                <Slider
+                                    imgSrc={item.slides}
+                                />
+                            </div>
+
+                        </motion.div>
+                    ))}
                 </div>
-                <div className='hidden absolute blur-container -bottom-20 right-1/3 top-1/2 w-[360px] h-[360px] bg-yellow-700 lg:block'>
+                <div className='hidden absolute blur-container -bottom-20 right-1/3 top-1/2 w-[360px] h-[360px]  lg:block'>
+                </div>
+                <div className='hidden absolute triangle-left -bottom-20 left-3 top-1/4 border-r-[360px] border-r-yellow-700 lg:block'>
                 </div>
             </div>
         </div>
