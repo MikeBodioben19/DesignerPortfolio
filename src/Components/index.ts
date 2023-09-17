@@ -1,6 +1,6 @@
 export {default as Navbar} from './Navbar'
-export {default as Caroussel} from './Caroussel'
-export {default as CarousselItem} from './CarousselItem'
+// export {default as Caroussel} from './Caroussel'
+// export {default as CarousselItem} from './CarousselItem'
 export {default as Footer} from './Footer'
 export {default as Slider} from './Slider'
 export {default as Loader} from './Loader'

@@ -475,7 +475,7 @@ export const formations = [
     },
     {
         id: 2,
-        title: "two-year technical degree in  Computer science",
+        title: "Two-year technical degree in  Computer science",
         date: "2019-2021",
         school: "IUT de Douala",
         desc: "During these two years I acquired skills in the analysis and design of information systems, learning methods and languages such as MERISE and UML. I also familiarized myself with tools such as Bootstrap, TailwindCss and Figma.",
