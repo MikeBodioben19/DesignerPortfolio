@@ -103,8 +103,8 @@ import { FaFigma } from 'react-icons/fa'
 export const brandingDesignContent = [
     {
         id: 1,
-        title: "Menu pour kimy Foods",
-        content: " Kimy Foods est un petit restaurant camerounais proposant des mets variés passants des hamburgers, aux croquettes et boissons naturelles.Ce meunu présente tous les mets disponibles dans une ambiance sobre et élégante. Avec de petits détails colorés pour attirer l'attention du client. ",
+        title: "Menu for kimy Foods",
+        content: " Kimy Foods is a small Cameroonian restaurant offering a variety of dishes, from hamburgers to croquettes and natural drinks. With small colorful details to attract the customer's attention. ",
         icon: DiPhotoshop,
         col1: '#ffc265',
         col2: '#fffff',
@@ -118,8 +118,8 @@ export const brandingDesignContent = [
     },
     {
         id: 2,
-        title: "Flyer pour les délices de Leida",
-        content: " Les délices de Leida est l'enseigne d'une jeune pâtissière camerounaise qui confectionne d'incroyoables pâtisseries pour ses clients. Ainsi l'usage des couleurs apporte une touche de délicatesse au flyer, en révélant ainsi le goût et la qualité de chacune de ses réalisations.",
+        title: "Flyer for les délices de Leida",
+        content: "Les délices de Leida is the brand name of a young Cameroonian pastry chef who makes incredible pastries for her customers. The use of color adds a delicate touch to the flyer, revealing the taste and quality of each of her creations.",
         icon: DiPhotoshop,
         col1: '#e08e54',
         col2: '#fff',
@@ -135,7 +135,7 @@ export const logoDesignContent = [
     {
         id: 1,
         title: "Pexple Logo concept",
-        content: " Pexple est un logo concept crée par moi pour une marque fictive d’équipement de protection.Les couleurs accentuent les détails liés à la typographie du logo. ",
+        content: "Pexple is a concept logo created by me for a fictitious brand of protective equipment. The colors accentuate the details of the logo's typography. ",
         icon: DiIllustrator,
         col1: '#ffc265',
         col2: '#fffff',
@@ -151,7 +151,7 @@ export const logoDesignContent = [
     {
         id: 2,
         title: "Converse Logo concept",
-        content: " Ceci est un conept logo fait par mes soins et inspiré du très connu logo de la marque Converse.J’ai décidé de retravailler ce logo en y apportant une touche de légèreté et de simplicité mais également un effet subliminal entre le “C” et l’étoile. ",
+        content: "This is a concept logo I designed, inspired by the well-known Converse logo. I decided to rework this logo by adding a touch of lightness and simplicity, but also a subliminal effect between the \"C\" and the star.",
         icon: DiIllustrator,
         col1: '#231f20',
         col2: '#fff',
@@ -166,7 +166,7 @@ export const logoDesignContent = [
     {
         id: 3,
         title: "JHIRE Logo ",
-        content: " JHire est un prototype de plateforme en ligne où des développeurs juniors pourront proposé leur service aux entreprise camerounaise.Ce logo est un subtil mélange de blanc, noir et vert qui contrastent parfaitement pour faire resortir les lettres “J” et “H” du logo. ",
+        content: "JHire is a prototype for an online platform where junior developers can offer their services to Cameroonian companies.this logo is a subtle blend of white, black and green, contrasting perfectly to highlight the letters \"J\" and \"H\" in the logo. ",
         icon: DiIllustrator,
         col1: '#3cb070',
         col2: '#fff',
@@ -182,7 +182,7 @@ export const logoDesignContent = [
     {
         id: 4,
         title: "Geneva Hôtel Logo concept",
-        content: " Ceci est un concept logo pour un hôtel fictif 5 étoiles.Il s’agit d’un logo de type monogramme formé avec les lettres “G” et “H”. Et l’utilisation des couleurs or et vert pour représenter le haut standing et de luxe de l’hôtel. ",
+        content: "This is a concept logo for a fictitious 5-star hotel, with a monogram logo formed by the letters \"G\" and \"H\". The colors gold and green represent the hotel's high standing and luxury.",
         icon: DiIllustrator,
         col1: '#2a704f',
         col2: '#fff',
@@ -201,7 +201,7 @@ export const packagingDesignContent = [
     {
         id: 1,
         title: "Supafee Packaging",
-        content: " Supafee est un packaging concept crée par moi pour une marque fictive de café. L’utilisation de la couleur marron permet de révéler les détails floraux dorés mais aussi la couleur blanche de la typographie et le logo. ",
+        content: "Supafee is a concept packaging created by me for a fictitious coffee brand. The use of the color brown not only reveals the golden floral details, but also the white typography and logo. ",
         icon: DiPhotoshop,
         col1: '#6d4a2c',
         col2: '#fffff',
@@ -217,7 +217,7 @@ export const packagingDesignContent = [
     {
         id: 2,
         title: "Krack Packaging",
-        content: "Ceci est un packaging concept fait pour une marque de chips fictive. Ce packaging est fait pour un paquet de chip de la marque. Il permet ainsi au client de visualiser à quoi ressemblerait le produit fini. ",
+        content: "This is a concept packaging made for a fictitious potato chip brand. The packaging is made for a packet of the brand's chips. It allows the customer to visualize what the finished product would look like. ",
         icon: DiIllustrator,
         col1: '#cd3f22',
         col2: '#fff',
@@ -233,7 +233,7 @@ export const packagingDesignContent = [
     {
         id: 3,
         title: "Yggy-Flake Packaging",
-        content: "Yggy-Flake si elle existait serait une marque de céréales multivitaminée . Ce packaging concept est fait pour une boite de céréale de 500g avec des couleurs attractives.",
+        content: "Yggy-Flake, if it existed, would be a multivitamin cereal brand. This concept packaging is made for a 500g cereal box with attractive colors.",
         icon: DiPhotoshop,
         col1: '#ecb01a',
         col2: '#db0c14',
@@ -248,7 +248,7 @@ export const packagingDesignContent = [
     {
         id: 4,
         title: "Supacream Packaging",
-        content: "Une fois de plus il s’agit d’un concept de packaging pour une marque de lait. La création du packaging design est passée par la réalisation du logo de l’enseigne. ",
+        content: "Once again, a packaging concept for a milk brand. The creation of the packaging design included the creation of the brand's logo.",
         icon: DiPhotoshop,
         col1: '#4385f5',
         col2: '#fff',
@@ -266,7 +266,7 @@ export const UiUxDesignContent = [
     {
         id: 1,
         title: "Tchitcha ",
-        content: "Qui est une marketplace pour étudiants, élèves ou parents en quête de professeurs pour des cours de répétitions.Il s’agit ici de l’interface de la plateforme, qui a été conçu par moi dans le cadre d’un projet future.",
+        content: "Which is a marketplace for students, pupils or parents looking for teachers for rehearsal classes. This is the interface of the platform, which was designed by me as part of a future project.",
         icon: FaFigma,
         col1: '#EB5E28',
         col2: '#fffff',
@@ -283,7 +283,7 @@ export const UiUxDesignContent = [
     {
         id: 2,
         title: "Porfolio Interface",
-        content: "Nous avons là le prototype d’interface pour un portfolio d’ui/ux designer. Cette interface comporte les sections About me, Contact, Projects et bien d’autres.",
+        content: "Here we have the prototype interface for a ui/ux designer's portfolio. The interface includes About me, Contact, Projects and many other sections.",
         icon: FaFigma,
         col1: '#256634',
         col2: '#fff',
@@ -300,7 +300,7 @@ export const UiUxDesignContent = [
     {
         id: 3,
         title: "Otakuiz",
-        content: "Il s’agit là d’un prototype d’interface pour une application mobile de quiz. Nous avons là quelques interface allant de la homepage au menu en passant par l’interface de login.",
+        content: "This is a prototype interface for a mobile quiz application. Here we have a number of interfaces, from the homepage to the menu and the login interface.",
         icon: FaFigma,
         col1: '#A7001E',
         col2: '#fff',
@@ -317,7 +317,7 @@ export const UiUxDesignContent = [
     {
         id: 4,
         title: "Yggdrasilcare  website",
-        content: "Ici il s’agit d’une landing page pour le site d’un hôpital qui offre diverse service. Nous avons les sections about, service, testimonails et bien d’autres.",
+        content: "This is a landing page for a hospital website offering various services. We have about, service, testimonials and many other sections.",
         icon: FaFigma,
         col1: '#219EBC',
         col2: '#fff',
@@ -337,7 +337,7 @@ export const illustrationContent = [
     {
         id: 1,
         title: "SOLITERRIEN",
-        content: "Seul dans l’espace avec pour seule compagne la lune au bout de son fils. L’astranaut Soliterrien navigue dans l’espace.Illustration réalisée en vecteur sous Addobe Illustrator. ",
+        content: "Alone in space, his only companion is the moon at the end of his son. The Soliterrian astronaut navigates in space.vector illustration in Addobe Illustrator. ",
         icon: DiIllustrator,
         col1: '#18151e',
         col2: '#73a2d6',
@@ -352,7 +352,7 @@ export const illustrationContent = [
     {
         id: 2,
         title: "Saint Alsine",
-        content: "Il s’agit d’un portrait en vecteur représentant une jeune femme noire vêtu d’une couronne lumineuse sur la tête rappelant Marie. ",
+        content: "This is a vector portrait of a young black woman wearing a luminous crown on her head, reminiscent of Mary. ",
         icon: DiIllustrator,
         col1: '#83543e',
         col2: '#fff',
@@ -367,7 +367,7 @@ export const illustrationContent = [
     {
         id: 3,
         title: "Moni",
-        content: "Représentation du portrait d’une jeune femme noire sous différente couche de couleur telle une peinture. Il a été réalisé en vecteur grâce au logiciel Adobe Illustrator.",
+        content: "Portrait of a young black woman under different layers of color, like a painting. It was created in vector format using Adobe Illustrator software.",
         icon: DiIllustrator,
         col1: '#c99e67',
         col2: '#538f5c',
@@ -382,7 +382,7 @@ export const illustrationContent = [
     {
         id: 4,
         title: "Red-Black Nike",
-        content: "Aussi vraie que possible, une illustration représentant une Nike airmax. Fait uniquement en vecteur pour un plaisir visuel. ",
+        content: "As real as it gets, an illustration of a Nike airmax. Made exclusively in vector for visual pleasure.",
         icon: DiIllustrator,
         col1: '#b90123',
         col2: '#dab445',
@@ -399,7 +399,7 @@ export const illustrationContent = [
 export const softSkills = [
     {
         id: 1,
-        title: "créativité",
+        title: "creativity",
     },
     {
         id: 2,
@@ -407,19 +407,19 @@ export const softSkills = [
     },
     {
         id: 3,
-        title: "curiosité",
+        title: "curiosity",
     },
     {
         id: 4,
-        title: "travail d'équipe",
+        title: "teamwork",
     },
     {
         id: 5,
-        title: "esprit critique",
+        title: "critical mind",
     },
     {
         id: 6,
-        title: "proactivité",
+        title: "proactivity",
     },
     {
         id: 7,
@@ -433,7 +433,7 @@ export const softSkills = [
 export const hardSkills = [
     {
         id: 1,
-        title: "utilisation des scénarios d'usage",
+        title: "use of usage scenarios",
     },
     {
         id: 2,
@@ -441,11 +441,11 @@ export const hardSkills = [
     },
     {
         id: 3,
-        title: "connaissance des couleurs",
+        title: "colors knowledge",
     },
     {
         id: 4,
-        title: "maîtrise de la typographie",
+        title: "mastery of typography",
     },
     {
         id: 5,
@@ -457,35 +457,35 @@ export const hardSkills = [
     },
     {
         id: 7,
-        title: "utilisation des personas",
+        title: "using personas",
     },
     {
         id: 8,
-        title: "maîtrise de l'affordance",
+        title: " affordance mastery",
     },
 ]
 
 export const formations = [
     {
         id: 1,
-        title: "Licence Technologique en Génie logiciel",
+        title: "Bachelor's in technology in software engineering",
         date: "2022-2023",
         school: "IUT de Douala",
-        desc: "Au cours de cette année j'ai pu avoir une licence en génie logiciel. M'ayant ainsi permit d'avoir des capacités de conceptions d'applications web plus complexes et d'architectures variées. Egalement la maîtrise des languages tels que TypeScript  et des frameworks comme React.",
+        desc: "During this year I was able to obtain a degree in software engineering. This enabled me to design more complex web applications with varied architectures. I also mastered languages such as TypeScript and frameworks like React.",
     },
     {
         id: 2,
-        title: "Diplôme Universitaire des Technologie en Génie Informatique",
+        title: "two-year technical degree in  Computer science",
         date: "2019-2021",
         school: "IUT de Douala",
-        desc: "Durant ces deux années j'ai pu acquérir des compétences en analyse et conception des systèmes d'informations,l'apprentissage des methodes et langages tels que MERISE et UML. Je me suis aussi familiarisé avec des outils tels que Bootstrap, TailwindCss et Figma.",
+        desc: "During these two years I acquired skills in the analysis and design of information systems, learning methods and languages such as MERISE and UML. I also familiarized myself with tools such as Bootstrap, TailwindCss and Figma.",
     },
     {
         id: 3,
-        title: "Baccalauréat en Maths et science de la vie et de la terre",
+        title: "Bachelor's degree in Maths and Life and Earth Sciences",
         date: "2017-2018",
-        school: "Lycéé bilingue de Nyalla",
-        desc: "Au terme de mes études secondaires, j’ai eu mon baccalauréat avec une mention passable et j’ai su que je voulais faire du design graphique.",
+        school: "High school of Nyalla",
+        desc: "When I finished high school, I passed my baccalaureate with honors and knew I wanted to do graphic design.",
     },
 ]
 export const testimonials = [
