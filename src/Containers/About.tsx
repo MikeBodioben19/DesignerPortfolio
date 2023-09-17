@@ -80,7 +80,7 @@ const About = () => {
                 className="absolute top-2 bottom-2 left-0 right-0 bg-yellow-500 z-20"
               ></motion.div>
                 <p className='text-lg text-justify font-medium lg:text-xl'>
-                Je suis un jeune camerounais passionné d’UI/UX Design et de Design Graphique, avec 4 ans d’expérience. Je suis un mec créatif qui fait des croquis en vacances comme ci c’est récréatif. Et je suis à la recherche de nouveaux challenges, bienvenue dans mon univers.
+                I'm a young Cameroonian with a passion for UI/UX Design and Graphic Design, with 4 years of experience. I'm a creative guy who sketches on vacation as if it's recreation. And I'm looking for new challenges, so welcome to my world.
                 </p>
               </div>
 

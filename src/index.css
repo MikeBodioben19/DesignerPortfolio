@@ -37,7 +37,7 @@ body{
   transition-duration: 500ms;
 }
 .icon-container:hover .software-icon {
-  fill:rgb(23 37 84);
+  fill:rgb(23, 37, 84);
 }
 .icon{
   transition-property: all;

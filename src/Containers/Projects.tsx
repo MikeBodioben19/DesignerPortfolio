@@ -3,7 +3,6 @@ import { Slider } from '../Components'
 import { UiUxDesignContent, brandingDesignContent, illustrationContent, logoDesignContent, packagingDesignContent } from '../Constants'
 import { motion,useAnimation, useInView } from 'framer-motion'
 import { fadeInAnimation, fadeInAnimation2, fadeUpVariants } from '../Animations'
-import { shape } from '../assets'
 
 
 const Projects = () => {
@@ -187,6 +186,8 @@ const Projects = () => {
                                     <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col3 }} >
                                     </div>
                                 </div>
+                                <a href={item.link} className='font-bold text-lg text-blue-950 mt-6 '> <i>See more</i></a>
+
                             </div>
                             <div className="image-container w-full h-[500px]  flex flex-col gap-y-2 lg:w-[500px]">
                                 <Slider
