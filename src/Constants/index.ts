@@ -461,7 +461,7 @@ export const hardSkills = [
     },
     {
         id: 8,
-        title: " affordance mastery",
+        title: "affordance mastery",
     },
 ]
 

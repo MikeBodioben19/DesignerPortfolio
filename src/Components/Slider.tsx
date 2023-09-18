@@ -3,7 +3,7 @@ import {useState} from 'react'
 import {slide1,slide2, slide3} from  '../assets'
 import { AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 
-
+import LazyLoad from 'react-lazy-load'
 
 type Props = {
     imgSrc:string[];
@@ -35,10 +35,10 @@ const Slider = ({imgSrc}:Props) => {
     <div 
         className='slider-section relative w-full h-full flex items-center justify-center'>
         <div className='slider-container relative w-full h-full flex flex-col justify-center items-center '>
-            <div className='w-full h-full transition-all duration-300 '   
+            <LazyLoad  offset={300} className='w-full h-full transition-all duration-300 '   
             >
-                <img src={imgSrc[currentIndex]} className='w-full h-full object-contain transition-all duration-300' alt="" />                
-            </div>
+                    <img src={imgSrc[currentIndex]} className='w-full h-full object-contain transition-all duration-300' alt="" />                
+            </LazyLoad>
             <div className='control absolute left-2 translate-y-1/2 cursor-pointer text-white rounded-full p-2 bg-black/10'>
                 <AiOutlineArrowLeft onClick={prevSlide} size={30} className=''/>
             </div>

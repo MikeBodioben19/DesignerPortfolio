@@ -5,6 +5,7 @@ import { motion,useAnimation, useInView } from 'framer-motion'
 import { fadeInAnimation, fadeInAnimation2, fadeUpVariants } from '../Animations'
 
 
+
 const Projects = () => {
     const ref = useRef(null)
     const isInView = useInView(ref, {once : true});
@@ -186,7 +187,7 @@ const Projects = () => {
                                     <div className={`color w-[32px] h-[32px]`} style={{ backgroundColor: item.col3 }} >
                                     </div>
                                 </div>
-                                <a href={item.link} className='font-bold text-lg text-blue-950 mt-6 '> <i>See more</i></a>
+                                <a href={item.link} className='font-bold text-lg text-blue-950 mt-6 '> <i>View the project</i></a>
 
                             </div>
                             <div className="image-container w-full h-[500px]  flex flex-col gap-y-2 lg:w-[500px]">

@@ -39,7 +39,7 @@ const Skills = () => {
                                 transition = {{delay : 0.05}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>créativité</p>
+                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>creativity</p>
                                 <p className='w-[35%] bg-blue-950 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -59,7 +59,7 @@ const Skills = () => {
                                 transition = {{delay : 0.15}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>curiosité</p>
+                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>curiosity</p>
                                 <p className='w-[35%] bg-blue-950 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -69,7 +69,7 @@ const Skills = () => {
                                 transition = {{delay : 0.2}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[85%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>travail d'équipe</p>
+                                <p className=' w-[85%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>teamwork</p>
                                 <p className='w-[15%] bg-blue-950 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -79,7 +79,7 @@ const Skills = () => {
                                 transition = {{delay : 0.25}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[80%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>esprit critique</p>
+                                <p className=' w-[80%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>critical mind</p>
                                 <p className='w-[20%] bg-blue-950 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -89,7 +89,7 @@ const Skills = () => {
                                 transition = {{delay : 0.3}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>proactivité</p>
+                                <p className=' w-[65%]  bg-yellow-600 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 hover:bg-yellow-500'>proactivity</p>
                                 <p className='w-[35%] bg-blue-950 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -139,8 +139,7 @@ const Skills = () => {
                                 transition = {{delay : 0.05}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-full  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>utilisation des scénarios d'usage</p>
-                                {/* <p className=' bg-blue-950 p-3 rounded-full'></p> */}
+                                <p className=' w-full  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>use of usage scenarios</p>
                             </motion.div>
                             <motion.div 
                                 variants={fadeUpAnimation}
@@ -159,7 +158,7 @@ const Skills = () => {
                                 transition = {{delay : 0.15}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[60%] bg-blue-950  rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>connaissance des couleurs</p>
+                                <p className=' w-[60%] bg-blue-950  rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>colors knowledge</p>
                                 <p className='w-[40%] bg-yellow-600 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -169,7 +168,7 @@ const Skills = () => {
                                 transition = {{delay : 0.2}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[85%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>maîtrise de la typographie</p>
+                                <p className=' w-[85%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>mastery of typography</p>
                                 <p className='w-[15%] bg-yellow-600 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -199,7 +198,7 @@ const Skills = () => {
                                 transition = {{delay : 0.35}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[70%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>utilisation des personas</p>
+                                <p className=' w-[70%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize transition-all duration-300 text-white hover:bg-blue-700 '>using personas</p>
                                 <p className='w-[30%] bg-yellow-600 p-3 rounded-full'></p>
                             </motion.div>
                             <motion.div 
@@ -209,7 +208,7 @@ const Skills = () => {
                                 transition = {{delay : 0.4}}
                                 // viewport={{once : true}}
                                 className='flex flex-row gap-x-2 my-3'>
-                                <p className=' w-[80%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white transition-all duration-300 hover:bg-blue-700 '>maîtrise de l'affordance</p>
+                                <p className=' w-[80%]  bg-blue-950 rounded-full p-3 text-center shadow-md text-lg capitalize text-white transition-all duration-300 hover:bg-blue-700 '>affordance mastery</p>
                                 <p className='w-[20%] bg-yellow-600 p-3 rounded-full'></p>
                             </motion.div>
                         </div>
