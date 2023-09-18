@@ -4,7 +4,7 @@
 import { Suspense, lazy } from 'react'
 import './App.css'
 
-import { Navbar,  Footer, Loader } from './Components'
+import { Navbar, Caroussel,  Footer, Loader } from './Components'
 
 const About = lazy(()=> import ("./Containers/About"))
 const Domains = lazy(()=> import ("./Containers/Domains"))
@@ -26,7 +26,7 @@ function App() {
       <Projects/>
       <Skills/>
       <Formations/>
-      {/* <Caroussel/> */}
+      <Caroussel/>
       <Footer/> 
     
     </Suspense>

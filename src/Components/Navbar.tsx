@@ -12,11 +12,13 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const closeMenu = () => {
-        setToggleMenu((toggleMenu) => (toggleMenu = false));
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        setToggleMenu((prev) => (prev = false));
     };
 
     const openMenu = () => {
-        setToggleMenu((toggleMenu) => (toggleMenu = true));
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        setToggleMenu((prev) => (prev = true));
     };
 
     return (

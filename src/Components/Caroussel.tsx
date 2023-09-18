@@ -47,7 +47,7 @@ const Caroussel = () => {
                     <div className='w-full flex items-center justify-center'>
                         {
                             testimonials.map((item,index) => (
-                                <div key={index} className={`text-xl transition-all duration-300 cursor-pointer ${index === activeIndex ? 'text-yellow-500' : 'text-yellow-900/10'} `} onClick={() => updateIndex(index)} >
+                                <div key={item.id} className={`text-xl transition-all duration-300 cursor-pointer ${index === activeIndex ? 'text-yellow-500' : 'text-yellow-900/10'} `} onClick={() => updateIndex(index)} >
                                     <RxDotFilled size={35}/>
                                 </div>
                             ))
