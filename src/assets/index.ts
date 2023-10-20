@@ -74,6 +74,9 @@ import uiux14 from './otakuizz (2)-min.jpg'
 import uiux15 from './otakuizz (3)-min.jpg'
 import uiux16 from './otakuizz (4)-min.jpg'
 
+import slide1 from "./profile.png"
+import slide2 from "./profile.png"
+import slide3 from "./profile.png"
 
 export {
     profile,
@@ -133,4 +136,7 @@ export {
     uiux14,
     uiux15,
     uiux16,
+    slide1,
+    slide2,
+    slide3,
 }
