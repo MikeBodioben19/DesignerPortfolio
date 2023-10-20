@@ -23,7 +23,7 @@ const About = () => {
           animate={{opacity : 1, y : 0}}
           transition={{duration : 2, type : "spring"}}
           className='container  w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center lg:flex-row-reverse lg:gap-x-6'>
-            <div className='about-img w-full bg-red-500 h-[340px] lg:w-[500px]'>
+            <div className='about-img w-ful h-[500px] lg:w-[500px]'>
               <img className="w-full h-full object-cover" src={profile} alt="profile" />
             </div>
             <motion.div 
