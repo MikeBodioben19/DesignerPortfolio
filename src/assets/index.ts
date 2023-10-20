@@ -1,3 +1,4 @@
+import profile from "./profile.png"
 import dots1 from "./dots (1).png"
 import dots2 from "./dots (2).png"
 
@@ -78,6 +79,7 @@ import slide2 from './people-2.jpg'
 import slide3 from './people-3.jpg'
 
 export {
+    profile,
     dots1,
     dots2,
     branding1,

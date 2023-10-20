@@ -1,5 +1,6 @@
 import { useRef,useEffect } from "react"
 import { motion,useInView, useAnimation } from "framer-motion"
+import { profile } from "../assets"
 
 const About = () => {
   const ref = useRef(null)
@@ -23,7 +24,7 @@ const About = () => {
           transition={{duration : 2, type : "spring"}}
           className='container  w-full max-w-[1440px] px-4 py-8 flex flex-col justify-center items-center lg:flex-row-reverse lg:gap-x-6'>
             <div className='about-img w-full bg-red-500 h-[340px] lg:w-[500px]'>
-
+              <img className="w-full h-full object-cover" src={profile} alt="profile" />
             </div>
             <motion.div 
 
